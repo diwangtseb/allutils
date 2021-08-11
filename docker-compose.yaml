@@ -1,0 +1,9 @@
+version: "3.9"
+services: 
+    testgolang:
+      build:
+        context: .
+      tty: true
+      command: bash
+      volumes: 
+        - ./conf:/home/xxx/conf
