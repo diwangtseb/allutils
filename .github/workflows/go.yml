@@ -24,10 +24,14 @@ jobs:
         ./app
       working-directory: ./goutils
 
-    - name: HasGcc
+    - name: Set up C
       run: |
         gcc --version
         gcc -o copy ./copy.c
         ./copy ../goutils/go.dockerfile c.dockerfile
         cat c.dockerfile
       working-directory: ./cutils
+    
+    - name: Set up Python
+        run: |
+          python --version
