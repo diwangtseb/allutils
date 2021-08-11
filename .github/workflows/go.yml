@@ -33,5 +33,5 @@ jobs:
       working-directory: ./cutils
     
     - name: Set up Python
-        run: |
-          python --version
+      run: |
+        python --version
