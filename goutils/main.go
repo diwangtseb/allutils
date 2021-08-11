@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"log"
 
-	"github.com/diwangtseb/yamldemo/conf"
+	"github.com/diwangtseb/goutils/conf"
 	yaml "gopkg.in/yaml.v2"
 )
 

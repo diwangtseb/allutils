@@ -1,4 +1,4 @@
-module github.com/diwangtseb/yamldemo
+module github.com/diwangtseb/goutils
 
 go 1.16
 
