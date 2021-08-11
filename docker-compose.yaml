@@ -1,19 +1,19 @@
 version: "3.9"
 services: 
-    testgolang:
+    testgo:
       build:
-        context: .
+        context: ./goutils
         dockerfile: go.dockerfile
       tty: true
       command: bash
       volumes: 
-        - ./conf:/home/xxx/conf
+        - ./goutils/conf:/home/xxx/conf
     testc:
       build:
-        context: .
+        context: ./cutils
           dockerfile: c.dockerfile
     testpy:
       build:
-        context: .
+        context: ./pyutils
           dockerfile: py.dockerfile
 
