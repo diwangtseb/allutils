@@ -1,3 +1,3 @@
 .PHONY: main
 main:
-	go build -o app ./main.go
+	cd ./goutils && go build -o app ./main.go

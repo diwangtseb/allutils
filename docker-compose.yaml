@@ -5,15 +5,16 @@ services:
         context: ./goutils
         dockerfile: go.dockerfile
       tty: true
-      command: bash
       volumes: 
         - ./goutils/conf:/home/xxx/conf
     testc:
       build:
         context: ./cutils
-          dockerfile: c.dockerfile
+        dockerfile: c.dockerfile
+      tty: true
     testpy:
       build:
         context: ./pyutils
-          dockerfile: py.dockerfile
+        dockerfile: py.dockerfile
+      tty: true
 
