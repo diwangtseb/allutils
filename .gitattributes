@@ -6,3 +6,4 @@
 *.go linguist-language=Go
 *.c linguist-language=C
 *.ts linguist-language=TypeScript
+*.py linguist-language=Python
