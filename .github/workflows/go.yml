@@ -29,5 +29,5 @@ jobs:
         gcc --version
         gcc -o copy ./copy.c
         ./copy ../goutils/go.dockerfile c.dockerfile
-        echo c.dockerfile
+        cat c.dockerfile
       working-directory: ./cutils
