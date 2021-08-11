@@ -1,0 +1,8 @@
+*.md linguist-language=Markdown
+*.yaml linguist-language=YAML
+*.html linguist-language=HTML 
+*.js linguist-language=JavaScript 
+*.sh linguist-language=Shell
+*.go linguist-language=Go
+*.c linguist-language=C
+*.ts linguist-language=TypeScript
