@@ -23,3 +23,6 @@ jobs:
         go build -o app ./main.go
         ./app
       working-directory: ./goutils
+    - name: HasGcc
+      run: |
+        gcc --version
