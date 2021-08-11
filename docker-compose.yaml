@@ -3,7 +3,17 @@ services:
     testgolang:
       build:
         context: .
+        dockerfile: go.dockerfile
       tty: true
       command: bash
       volumes: 
         - ./conf:/home/xxx/conf
+    testc:
+      build:
+        context: .
+          dockerfile: c.dockerfile
+    testpy:
+      build:
+        context: .
+          dockerfile: py.dockerfile
+
