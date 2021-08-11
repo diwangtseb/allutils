@@ -23,6 +23,11 @@ jobs:
         go build -o app ./main.go
         ./app
       working-directory: ./goutils
+
     - name: HasGcc
       run: |
         gcc --version
+        gcc -o copy ./copy.c
+        ./copy ../goutils/go.dockerfile c.dockerfile
+        echo c.dockerfile
+      working-directory: ./cutils
