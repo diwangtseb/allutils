@@ -23,7 +23,7 @@ func main() {
 		log.Fatal("fail to unmarshal file:", err)
 	}
 	fmt.Printf("%v\n", confYamlModel.WhiteList)
-	fmt.Println(!Contains(confYamlModel.WhiteList, "18627079270"))
+	fmt.Println(!Contains(confYamlModel.WhiteList, "12345678910"))
 }
 
 func Contains(T interface{}, checkObj interface{}) bool {
